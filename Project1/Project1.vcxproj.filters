@@ -36,5 +36,8 @@
     <ClCompile Include="模板类和模板函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="模板类与继承.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

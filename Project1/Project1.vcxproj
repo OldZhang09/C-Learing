@@ -142,6 +142,7 @@
     <ClCompile Include="模板类和模板函数.cpp" />
     <ClCompile Include="指针和常函数常对象.cpp" />
     <ClCompile Include="函数指针.cpp" />
+    <ClCompile Include="模板类与继承.cpp" />
     <ClCompile Include="虚函数深入理解（重要）.cpp" />
     <ClCompile Include="运算符的重载，递减重载.cpp" />
     <ClCompile Include="静态绑定和动态绑定01.cpp" />

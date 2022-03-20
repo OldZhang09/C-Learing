@@ -39,5 +39,11 @@
     <ClCompile Include="模板类与继承.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="友元函数和类模板类.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="深拷贝与浅拷贝.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -105,8 +105,6 @@ int main() {
 	//总结：建议直接类内实现友元函数
 	Fun4(&btp);
 
-	void* op = new Person[10];
-
 	system("pause");
 	return 0;
 }

@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="友元函数和类模板类.cpp" />
+    <ClCompile Include="标准模板库01.cpp" />
     <ClCompile Include="模板类和模板函数.cpp" />
     <ClCompile Include="指针和常函数常对象.cpp" />
     <ClCompile Include="函数指针.cpp" />
@@ -149,6 +150,9 @@
     <ClCompile Include="运算符的重载，递减重载.cpp" />
     <ClCompile Include="静态绑定和动态绑定01.cpp" />
     <ClCompile Include="静态绑定和动态绑定02.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyArray.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

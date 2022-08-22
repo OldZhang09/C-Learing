@@ -1,12 +1,6 @@
-//
 //#include <iostream>
 //using namespace std;
 //
-////浅拷贝 运行报错。
-////这是由于编译系统在我们没有自己定义拷贝构造函数时，会在拷贝对象时调用默认拷贝构造函数，进行的是浅拷贝！即对指针拷贝后会出现两个指针指向同一个内存空间。
-////p1/p2都是在栈区的对象，由于栈区的规则是先进后出，当执行完拷贝构造函数的时候，就会执行p2的析构函数，p2中的m_height在析构中被delete,然后执行p1的析构，p1的m_height被delete，
-//// 而实际上他们指向同一块地址，
-////因此当执行p1的析构函数时就会导致内存释放2次，程序崩溃。
 //
 //class Person {
 //public:
@@ -17,6 +11,13 @@
 //		m_age = age;
 //		m_height = new int(height);	//在堆区开辟内存
 //		cout << "Person有参构造函数的调用" << endl;
+//	}
+//	//拷贝构造函数  
+//	Person(const Person& p) {
+//		cout << "Person拷贝构造函数!" << endl;
+//		//如果不利用深拷贝在堆区创建新内存，会导致浅拷贝带来的重复释放堆区问题
+//		m_age = p.m_age;
+//		m_height = new int(*p.m_height);
 //	}
 //	~Person() {
 //		if (m_height != NULL) {
@@ -42,4 +43,5 @@
 //
 //	system("pause");
 //	return 0;
+//
 //}

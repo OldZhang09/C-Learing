@@ -16,6 +16,8 @@
 //	}
 //	T1 age;
 //	T2 name;
+//	//定义了一个自定义类型
+//	typedef int mytype;
 //};
 //
 ////模板函数
@@ -37,6 +39,15 @@
 //
 ////模板函数 形参是类
 //template<class P> void Func4(P& p) {
+//	p.showPerson();
+//}
+///*
+//* 注意这里，为什么要加typename
+//* 1.首先我们在Person类里用typedef 定义了mytype 为一个类型（int类型）
+//* 2.我们想用这个类型去定义Func5的第二个形参，按照（类型 变量名）的格式 应该为 P::mytype mt，会发现报错
+//* 3.此时因为Func5实际还没有被调用（程序没有运行），我们不能确定P是什么，所以编译器会不能确定 P::mytype是 P的静态成员还是P的一个typedef类型，所以要加一个typename
+//*/
+//template<class P> void Func5(P& p,typename P::mytype mt) {
 //	p.showPerson();
 //}
 //
